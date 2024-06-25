@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Immagine a Larghezza Completa</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 300%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: 'Montserrat', sans-serif; /* Imposta il font Roboto */
+        }
+        .full-width-image {
+            width: 100%;
+            height: 50vh; /* 50% dell'altezza della finestra */
+            object-fit: cover;
+            object-position: top; /* Inizia dall'alto */
+        }
+        h1.title {
+            font-size: 2.5em; /* Dimensione del titolo maggiore */
+            margin: 20px 0; /* Margini per spaziatura */
+            font-style: italic;
+        }
+        .content {
+            width: 80%; /* Larghezza del contenuto centrata */
+            max-width: 800px; /* Larghezza massima per il contenuto */
+            margin: 20px auto; /* Margini automatici per centrare */
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Aggiunge una leggera ombra */
+            background-color: #fff; /* Sfondo bianco */
+            border-radius: 8px; /* Angoli arrotondati */
+        }
+        .centered-image {
+            width: 100%; /* Larghezza dell'immagine */
+            max-height: 100%;
+            object-fit: contain;
+        }
+    </style>
+</head>
+<body>
+    <img src="Logo.png" alt="Immagine" class="full-width-image">
+    <h1 class="title">Euro2024 Stats</h1>
+    <div class="content">
+        <h1>Contenuto della pagina</h1>
+        <p>Questo è il contenuto della pagina. Scorri verso il basso per vedere l'effetto.</p>
+        <img src="Grafico_1.png" alt="Immagine Centrata" class="centered-image">
+    </div>
+    <div class="content">
+        <h1>Contenuto della pagina</h1>
+        <p>Questo è il contenuto della pagina. Scorri verso il basso per vedere l'effetto.</p>
+        <img src="Grafico_2.png" alt="Immagine Centrata" class="centered-image">
+    </div>
+</body>
+</html>
